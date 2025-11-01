@@ -11,3 +11,6 @@
 <li>make the code executable using <code>sudo chmod +x https.sh</code></li>
 <li>run the bash script using <code>./https.sh</code> follow the instruction until it says success</li>
 <li>you can now view the wordpress application on the browser and also see the secure certificate</li>
+<li>you can then proceed to format the page by signing in as an admin</li>
+<code>cat bitnami_application_password</code> this will give credentials to log in as an admin
+<code> add /wp-admin</code> to the url to access the backend
