@@ -6,3 +6,8 @@
 <li>select networking and attach a static ip address to the instance</li>
 <li>set up a domain name at <code>duckdns.org</code></li>
 <li>update the ip address to the static ip address</li>
+<li>log into the instance and set up https to secure the site</li>
+<code>sudo vi https.sh</code> 
+<li>make the code executable using <code>sudo chmod +x https.sh</code></li>
+<li>run the bash script using <code>./https.sh</code> follow the instruction until it says success</li>
+<li>you can now view the wordpress application on the browser and also see the secure certificate</li>
