@@ -1,11 +1,21 @@
 <h1>Wordpress deployment using aws light sail</h1>
-<li>log into your aws account and search for light sail</li>
-<li>click on create instance, select instance location, operating system and word press</li>
-<li>select ssh key pair or create a new one</li>
-<li>select pricing and give your isntance a name before launching the instance</li>
+<h3>log into your aws account and search for light sail</h3>
+<li>click on create instance
+<li>select instance location</li>
+<li>select operating system
+<li>select word press</li>
+<h3>creating a key pair</h3>
+<li>create a new keypair or select an existing one</li>
+<h3>aws light sail pricing</h3>
+<li>select pricing, I use the lowest price of 5$</li>
+<li>name your instance before launching it</li>
+<h3>networking</h3>
 <li>select networking and attach a static ip address to the instance</li>
-<li>set up a domain name at <code>duckdns.org</code></li>
-<li>update the ip address to the static ip address</li>
+<h3>setting up domain name</h3>
+<li>set up a domain name at <code>duckdns.org</code> and check for its availability</li>
+<li>change the defaukt ip address genrated by <code>duckdns.org</code> to the static ip address you created in aws</li>
+<h3>logging in to the instance using mobaxterm</h3>
+<li>on the mobaxterm terminal, add the username, static ip address and keypair to connect to the instance created
 <li>log into the instance and set up https to secure the site</li>
 <code>sudo vi https.sh</code> 
 <li>make the code executable using <code>sudo chmod +x https.sh</code></li>
