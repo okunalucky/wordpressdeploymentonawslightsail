@@ -16,11 +16,33 @@
 <li>change the defaukt ip address genrated by <code>duckdns.org</code> to the static ip address you created in aws</li>
 <h3>logging in to the instance using mobaxterm</h3>
 <li>on the mobaxterm terminal, add the username, static ip address and keypair to connect to the instance created
-<li>log into the instance and set up https to secure the site</li>
-<code>sudo vi https.sh</code> 
+<h3>creating ssl certificate</h3>
+<li>on the instance<code>sudo vi https.sh</code></li>
+<li>copy the code into the <code>https.sh</code>
+<code>
+  #!/usr/bin/env bash
+# Helper: Launch Bitnami's HTTPS configuration tool for Let's Encrypt
+# Note: bncert-tool is interactive; ensure your DuckDNS domain resolves to this instance IP.
+set -euo pipefail
+
+if [[ ! -x "/opt/bitnami/bncert-tool" ]]; then
+  echo "Bitnami bncert-tool not found at /opt/bitnami/bncert-tool" >&2
+  exit 1
+fi
+
+echo "Opening Bitnami HTTPS configuration tool..."
+echo "Prereqs:"
+echo " 1) DuckDNS subdomain points to this instance's STATIC IP"
+echo " 2) Ports 80 and 443 open in Lightsail Networking"
+echo " 3) Be ready to enter your domain (e.g., mysite.duckdns.org)"
+sudo /opt/bitnami/bncert-tool
+
+</code>
 <li>make the code executable using <code>sudo chmod +x https.sh</code></li>
-<li>run the bash script using <code>./https.sh</code> follow the instruction until it says success</li>
-<li>you can now view the wordpress application on the browser and also see the secure certificate</li>
+<h3>run the bash script</h3>
+<li>use <code>./https.sh</code> follow the instruction until it says success</li>
+<h3>word press deployment</h3>
+<li>you can now view the wordpress application on the browser using the domain name generated and you can also see ssl</li>
 <li>you can then proceed to format the page by signing in as an admin</li>
 <code>cat bitnami_application_password</code> this will give credentials to log in as an admin
 <code> add /wp-admin</code> to the url to access the backend
