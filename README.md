@@ -40,9 +40,10 @@ sudo /opt/bitnami/bncert-tool
 </code>
 <li>make the code executable using <code>sudo chmod +x https.sh</code></li>
 <h3>run the bash script</h3>
-<li>use <code>./https.sh</code> follow the instruction until it says success</li>
+<li>use <code>./https.sh</code> to run the script, follow the instruction until it says successful</li>
 <h3>word press deployment</h3>
-<li>you can now view the wordpress application on the browser using the domain name generated and you can also see ssl</li>
-<li>you can then proceed to format the page by signing in as an admin</li>
-<code>cat bitnami_application_password</code> this will give credentials to log in as an admin
-<code> add /wp-admin</code> to the url to access the backend
+<li>you can now view the secured wordpress application on the browser by passing in the domain name</li>
+<h3>accessing the backend of the wordpress application</h3>
+<li>to accesss the admin credentials use<code>cat bitnami_application_password</code>
+<li><code>@domainname.com/wp-admin</code>
+<li>you can now proceed to log in using the credentials and url above</li>
