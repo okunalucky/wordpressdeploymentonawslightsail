@@ -47,5 +47,5 @@ sudo /opt/bitnami/bncert-tool
 <li>to accesss the admin credentials use<code>cat bitnami_application_password</code>
 <li><code>@domainname.com/wp-admin</code>
 <li>you can now proceed to log in using the credentials and url above</li>
-<h3>change themes</h3>
+<h3>formatting the wordpress application</h3>
 <li>after logging in to the backend using the credentials, you can select any theme of your choice under appearance and save changes, it will be effected instantly</li>
