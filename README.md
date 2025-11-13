@@ -45,6 +45,7 @@ sudo /opt/bitnami/bncert-tool
 <li>use <code>./https.sh</code> to run the script, follow the instruction until it says successful</li>
 <h3>word press deployment</h3>
 <li>you can now view the secured wordpress application on the browser by passing in the domain name</li>
+
 # THE STATIC WEBSITE
 <img width="967" height="603" alt="Image" src="https://github.com/user-attachments/assets/5708a3e6-4187-45e0-9f50-039bcc722b6d" />
 
@@ -54,3 +55,7 @@ sudo /opt/bitnami/bncert-tool
 <li>you can now proceed to log in using the credentials and url above</li>
 <h3>formatting the wordpress application</h3>
 <li>after logging in to the backend using the credentials, you can select any theme of your choice under appearance and save changes, it will be effected instantly</li>
+
+# FORMATTED WEBSITE
+<img width="1245" height="658" alt="Image" src="https://github.com/user-attachments/assets/fee2333f-1d50-45c0-aab1-2b32d55180e5" />
+
