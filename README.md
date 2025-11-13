@@ -1,3 +1,5 @@
+# WORDPRESS DEPLOYMENT USING AWS LIGHT SAIL
+<img width="841" height="581" alt="Image" src="https://github.com/user-attachments/assets/0289d061-9785-4176-9145-6df3d4e6ca9d" />
 <h1>Wordpress deployment using aws light sail</h1>
 <h3>log into your aws account and search for light sail</h3>
 <li>click on create instance
