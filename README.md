@@ -45,6 +45,9 @@ sudo /opt/bitnami/bncert-tool
 <li>use <code>./https.sh</code> to run the script, follow the instruction until it says successful</li>
 <h3>word press deployment</h3>
 <li>you can now view the secured wordpress application on the browser by passing in the domain name</li>
+# THE STATIC WEBSITE
+<img width="967" height="603" alt="Image" src="https://github.com/user-attachments/assets/5708a3e6-4187-45e0-9f50-039bcc722b6d" />
+
 <h3>accessing the backend of the wordpress application</h3>
 <li>to accesss the admin credentials use<code>cat bitnami_application_password</code>
 <li><code>@domainname.com/wp-admin</code>
