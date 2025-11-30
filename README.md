@@ -1,6 +1,8 @@
 # WORDPRESS DEPLOYMENT USING AWS LIGHT SAIL
 <img width="841" height="581" alt="Image" src="https://github.com/user-attachments/assets/080e10f6-3106-40bb-976b-f8f8de8b9ca7" />
-- Wordpress deployment using aws light sail
+
+
+
 - Log into your aws account and search for light sail
 - Click on create instance: select instance location, operating system, wordpress
 - Create a key pair: create a key pair or select an existing one
